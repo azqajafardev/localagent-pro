@@ -1,39 +1,41 @@
-# AgenticSeek: Private, Local Manus Alternative.
+# localagent-pro: Private, Local Manus Alternative.
+
+> **Naming note:** The project is presented here as **localagent-pro**. Existing upstream repository URLs, directory names, asset paths, and commands still use `agenticSeek`; keep those exact values when following setup instructions.
 
 <p align="center">
-<img align="center" src="./media/agentic_seek_logo.png" width="300" height="300" alt="Agentic Seek Logo">
+<img align="center" src="./media/agentic_seek_logo.png" width="300" height="300" alt="localagent-pro logo">
 <p>
 
-  English | [中文](./README_CHS.md) | [繁體中文](./README_CHT.md) | [Français](./README_FR.md) | [日本語](./README_JP.md) | [Português (Brasil)](./README_PTBR.md) | [Español](./README_ES.md) | [Türkçe](./README_TR.md)
+  English | [ä¸­æ–‡](./README_CHS.md) | [ç¹é«”ä¸­æ–‡](./README_CHT.md) | [FranÃ§ais](./README_FR.md) | [æ—¥æœ¬èªž](./README_JP.md) | [PortuguÃªs (Brasil)](./README_PTBR.md) | [EspaÃ±ol](./README_ES.md) | [TÃ¼rkÃ§e](./README_TR.md)
 
 *A **100% local alternative to Manus AI**, this voice-enabled AI assistant autonomously browses the web, writes code, and plans tasks while keeping all data on your device. Tailored for local reasoning models, it runs entirely on your hardware, ensuring complete privacy and zero cloud dependency.*
 
-[![Visit AgenticSeek](https://img.shields.io/static/v1?label=Website&message=AgenticSeek&color=blue&style=flat-square)](https://fosowl.github.io/agenticSeek.html) ![License](https://img.shields.io/badge/license-GPL--3.0-green) [![Discord](https://img.shields.io/badge/Discord-Join%20Us-7289DA?logo=discord&logoColor=white)](https://discord.gg/8hGDaME3TC) [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/fosowl.svg?style=social&label=Update%20%40Fosowl)](https://x.com/Martin993886460) [![GitHub stars](https://img.shields.io/github/stars/Fosowl/agenticSeek?style=social)](https://github.com/Fosowl/agenticSeek/stargazers)
+[![Visit localagent-pro](https://img.shields.io/static/v1?label=Website&message=AgenticSeek&color=blue&style=flat-square)](https://fosowl.github.io/agenticSeek.html) ![License](https://img.shields.io/badge/license-GPL--3.0-green) [![Discord](https://img.shields.io/badge/Discord-Join%20Us-7289DA?logo=discord&logoColor=white)](https://discord.gg/8hGDaME3TC) [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/fosowl.svg?style=social&label=Update%20%40Fosowl)](https://x.com/Martin993886460) [![GitHub stars](https://img.shields.io/github/stars/Fosowl/agenticSeek?style=social)](https://github.com/Fosowl/agenticSeek/stargazers)
 
-### Why AgenticSeek ?
+### Why localagent-pro?
 
-* 🔒 Fully Local & Private - Everything runs on your machine — no cloud, no data sharing. Your files, conversations, and searches stay private.
+* ðŸ”’ Fully Local & Private - Everything runs on your machine â€” no cloud, no data sharing. Your files, conversations, and searches stay private.
 
-* 🌐 Smart Web Browsing - AgenticSeek can browse the internet by itself — search, read, extract info, fill web form — all hands-free.
+* ðŸŒ Smart Web Browsing - localagent-pro can browse the internet by itself â€” search, read, extract info, fill web form â€” all hands-free.
 
-* 💻 Autonomous Coding Assistant - Need code? It can write, debug, and run programs in Python, C, Go, Java, and more — all without supervision.
+* ðŸ’» Autonomous Coding Assistant - Need code? It can write, debug, and run programs in Python, C, Go, Java, and more â€” all without supervision.
 
-* 🧠 Smart Agent Selection - You ask, it figures out the best agent for the job automatically. Like having a team of experts ready to help.
+* ðŸ§  Smart Agent Selection - You ask, it figures out the best agent for the job automatically. Like having a team of experts ready to help.
 
-* 📋 Plans & Executes Complex Tasks - From trip planning to complex projects — it can split big tasks into steps and get things done using multiple AI agents.
+* ðŸ“‹ Plans & Executes Complex Tasks - From trip planning to complex projects â€” it can split big tasks into steps and get things done using multiple AI agents.
 
-* 🎙️ Voice-Enabled - Clean, fast, futuristic voice and speech to text allowing you to talk to it like it's your personal AI from a sci-fi movie. (In progress)
+* ðŸŽ™ï¸ Voice-Enabled - Clean, fast, futuristic voice and speech to text allowing you to talk to it like it's your personal AI from a sci-fi movie. (In progress)
 
 ### **Demo**
 
-> *Can you search for the agenticSeek project, learn what skills are required, then open the CV_candidates.zip and then tell me which match best the project*
+> *Can you search for the localagent-pro project, learn what skills are required, then open the CV_candidates.zip and then tell me which match best the project*
 
 https://github.com/user-attachments/assets/b8ca60e9-7b3b-4533-840e-08f9ac426316
 
 Disclaimer: This demo, including all the files that appear (e.g: CV_candidates.zip), are entirely fictional. We are not a corporation, we seek open-source contributors not candidates.
 
 
-> 🙏 This project started as a side-project and has zero roadmap and zero funding. It's grown way beyond what I expected by ending in GitHub Trending. Contributions, feedback, and patience are deeply appreciated.
+> ðŸ™ This project started as a side-project and has zero roadmap and zero funding. It's grown way beyond what I expected by ending in GitHub Trending. Contributions, feedback, and patience are deeply appreciated.
 
 ## Prerequisites
 
@@ -56,7 +58,7 @@ mv .env.example .env
 ### 2. Change the .env file content
 
 ```sh
-SEARXNG_BASE_URL="http://searxng:8080" # value depends on where the backend runs — see the SEARXNG note below
+SEARXNG_BASE_URL="http://searxng:8080" # value depends on where the backend runs â€” see the SEARXNG note below
 SEARXNG_PORT=8080
 REDIS_BASE_URL="redis://redis:6379/0"
 WORK_DIR="/Users/mlg/Documents/workspace_for_ai"
@@ -74,17 +76,17 @@ ANTHROPIC_API_KEY='optional'
 
 Update the `.env` file with your own values as needed:
 
-- **SEARXNG_PORT**: The **host** port Docker publishes SearXNG on. If port `8080` is already taken on your machine, set another one (e.g. `8001`). Inside Docker the container always listens on `8080` — this variable never changes that.
+- **SEARXNG_PORT**: The **host** port Docker publishes SearXNG on. If port `8080` is already taken on your machine, set another one (e.g. `8001`). Inside Docker the container always listens on `8080` â€” this variable never changes that.
 - **SEARXNG_BASE_URL**: The address the **backend** uses to reach SearXNG. It is set here in `.env` (not in `config.ini`) and depends only on where the backend runs:
 
-| How you run AgenticSeek | `SEARXNG_BASE_URL` |
+| How you run localagent-pro | `SEARXNG_BASE_URL` |
 |---|---|
-| Web interface — backend in Docker (`./start_services.sh full`) | `http://searxng:8080` — always port `8080`, even if you changed `SEARXNG_PORT` |
-| CLI mode — backend on host (`uv run cli.py`) | `http://localhost:8080` — if you changed `SEARXNG_PORT`, use that port instead (e.g. `http://localhost:8001`). `http://searxng:...` does **not** work here: that hostname only exists inside Docker |
+| Web interface â€” backend in Docker (`./start_services.sh full`) | `http://searxng:8080` â€” always port `8080`, even if you changed `SEARXNG_PORT` |
+| CLI mode â€” backend on host (`uv run cli.py`) | `http://localhost:8080` â€” if you changed `SEARXNG_PORT`, use that port instead (e.g. `http://localhost:8001`). `http://searxng:...` does **not** work here: that hostname only exists inside Docker |
 
-> To check SearXNG in a browser, always use the host port: `http://localhost:<SEARXNG_PORT>`. After changing `.env`, restart the backend — the file is only read at process start.
+> To check SearXNG in a browser, always use the host port: `http://localhost:<SEARXNG_PORT>`. After changing `.env`, restart the backend â€” the file is only read at process start.
 - **REDIS_BASE_URL**: Leave unchanged
-- **WORK_DIR**: Path to your working directory on your local machine. AgenticSeek will be able to read and interact with these files.
+- **WORK_DIR**: Path to your working directory on your local machine. localagent-pro will be able to read and interact with these files.
 - **OLLAMA_PORT**: Port number for the Ollama service.
 - **LM_STUDIO_PORT**: Port number for the LM Studio service.
 - **CUSTOM_ADDITIONAL_LLM_PORT**: Port for any additional custom LLM service.
@@ -113,7 +115,7 @@ If you see information about your Docker installation, it is running correctly.
 
 See the table of [Local Providers](#list-of-local-providers) below for a summary.
 
-Next step: [Run AgenticSeek locally](#start-services-and-run)
+Next step: [Run localagent-pro locally](#start-services-and-run)
 
 *See the [Troubleshooting](#troubleshooting) section if you are having issues.*
 *If your hardware can't run LLMs locally, see [Setup to run with an API](#setup-to-run-with-an-api).*
@@ -131,7 +133,7 @@ To run LLMs locally, you'll need sufficient hardware. At a minimum, a GPU capabl
 
 Start your local provider (for example with ollama):
 
-Unless you wish to to run AgenticSeek on host (CLI mode), export or set the provider listen address:
+Unless you wish to to run localagent-pro on host (CLI mode), export or set the provider listen address:
 
 ```sh
 export OLLAMA_HOST=0.0.0.0:11434
@@ -186,7 +188,7 @@ Do not copy and paste the example configuration directly, as comments will cause
 | lm-studio  | Yes    | Run LLM locally with LM studio (set `provider_name` to `lm-studio`)|
 | openai    | Yes     |  Use openai compatible API (eg: llama.cpp server)  |
 
-Next step: [Start services and run AgenticSeek](#Start-services-and-Run)
+Next step: [Start services and run localagent-pro](#Start-services-and-Run)
 
 *See the [Troubleshooting](#troubleshooting) section if you are having issues.*
 *If your hardware can't run LLMs locally, see [Setup to run with an API](#setup-to-run-with-an-api).*
@@ -255,7 +257,7 @@ provider_server_address = # Typically ignored or can be left blank when is_local
 *   Coding/bash tasks might encounter issues with Gemini, as it may not strictly follow formatting prompts optimized for Deepseek.
 *   The `provider_server_address` in `config.ini` is generally not used when `is_local = False` as the API endpoint is usually hardcoded in the respective provider's library.
 
-Next step: [Start services and run AgenticSeek](#Start-services-and-Run)
+Next step: [Start services and run localagent-pro](#Start-services-and-Run)
 
 *See the **Known issues** section if you are having issues*
 
@@ -265,7 +267,7 @@ Next step: [Start services and run AgenticSeek](#Start-services-and-Run)
 
 ## Start services and Run
 
-By default AgenticSeek is run fully in docker.
+By default localagent-pro is run fully in docker.
 
 **Option 1:** Run in Docker, use web interface:
 
@@ -284,7 +286,7 @@ start start_services.cmd full # Window
 
 Go to `http://localhost:3000/` and you should see the web interface.
 
-*Troubleshooting service start:* If these scripts fail, ensure Docker Engine is running and Docker Compose (V2, `docker compose`) is correctly installed. Check the output in the terminal for error messages. See [FAQ: Help! I get an error when running AgenticSeek or its scripts.](#faq-troubleshooting)
+*Troubleshooting service start:* If these scripts fail, ensure Docker Engine is running and Docker Compose (V2, `docker compose`) is correctly installed. Check the output in the terminal for error messages. See [FAQ: Help! I get an error when running localagent-pro or its scripts.](#faq-troubleshooting)
 
 **Option 2:** CLI mode:
 
@@ -301,7 +303,7 @@ Then you must change SEARXNG_BASE_URL in your `.env` file (**not** `config.ini`)
 SEARXNG_BASE_URL="http://localhost:8080"
 ```
 
-> If you changed `SEARXNG_PORT` in `.env`, use that port here instead (e.g. `http://localhost:8001`). Restart `cli.py` after editing `.env` — the value is read at startup.
+> If you changed `SEARXNG_PORT` in `.env`, use that port here instead (e.g. `http://localhost:8001`). Restart `cli.py` after editing `.env` â€” the value is read at startup.
 
 Start required services. This will start some services from the docker-compose.yml, including:
     - searxng
@@ -336,7 +338,7 @@ Here are some example usage:
 
 > *Write a Go program to calculate the factorial of a number, save it as factorial.go in your workspace*
 
-> *Search my summer_pictures folder for all JPG files, rename them with today’s date, and save a list of renamed files in photos_list.txt*
+> *Search my summer_pictures folder for all JPG files, rename them with todayâ€™s date, and save a list of renamed files in photos_list.txt*
 
 > *Search online for popular sci-fi movies from 2024 and pick three to watch tonight. Save the list in movie_night.txt.*
 
@@ -348,7 +350,7 @@ Here are some example usage:
 
 
 
-After you type your query, AgenticSeek will allocate the best agent for the task.
+After you type your query, localagent-pro will allocate the best agent for the task.
 
 Because this is an early prototype, the agent routing system might not always allocate the right agent based on your query.
 
@@ -364,7 +366,7 @@ Instead, ask:
 
 ## **Setup to run the LLM on your own server**
 
-If you have a powerful computer or a server that you can use, but you want to use it from your laptop, you can run the LLM on the remote machine with a standard LLM server (Ollama, or any OpenAI-compatible server such as llama.cpp's `llama-server`) and point AgenticSeek at it over the network. No AgenticSeek-specific code needs to run on the server.
+If you have a powerful computer or a server that you can use, but you want to use it from your laptop, you can run the LLM on the remote machine with a standard LLM server (Ollama, or any OpenAI-compatible server such as llama.cpp's `llama-server`) and point localagent-pro at it over the network. No localagent-pro-specific code needs to run on the server.
 
 On your "server" that will run the AI model, get the ip address
 
@@ -394,7 +396,7 @@ provider_model = deepseek-r1:14b
 provider_server_address = x.x.x.x:11434
 ```
 
-`is_local` must be `False` here: with `True`, AgenticSeek looks for Ollama on the machine it runs on and ignores the address.
+`is_local` must be `False` here: with `True`, localagent-pro looks for Ollama on the machine it runs on and ignores the address.
 
 **Option 2: llama.cpp or any other OpenAI-compatible server**
 
@@ -404,7 +406,7 @@ On the server, start [llama.cpp's llama-server](https://github.com/ggml-org/llam
 llama-server -m your-model.gguf --host 0.0.0.0 --port 8080
 ```
 
-On your personal computer, use the `lm-studio` provider — it speaks the plain OpenAI-compatible `/v1/chat/completions` API without requiring an API key:
+On your personal computer, use the `lm-studio` provider â€” it speaks the plain OpenAI-compatible `/v1/chat/completions` API without requiring an API key:
 
 ```ini
 [MAIN]
@@ -414,11 +416,11 @@ provider_model = your-model
 provider_server_address = http://x.x.x.x:8080
 ```
 
-**Legacy: custom AgenticSeek LLM server (deprecated)**
+**Legacy: custom localagent-pro LLM server (deprecated)**
 
 Earlier versions shipped a custom Flask-based wrapper in `llm_server/`, used with `provider_name = server`. It is deprecated: it handles one request at a time, does not stream, offers no authentication, and the standard servers above do everything it did. It remains in the repository only for existing setups and may be removed in a future release.
 
-Next step: [Start services and run AgenticSeek](#Start-services-and-Run)
+Next step: [Start services and run localagent-pro](#Start-services-and-Run)
 
 ---
 
@@ -478,7 +480,7 @@ stealth_mode = False
 *   **`[MAIN]` Section:**
     *   `is_local`: `True` if using a local LLM provider (Ollama, LM-Studio, local OpenAI-compatible server) or the self-hosted server option. `False` if using a cloud-based API (OpenAI, Google, etc.).
     *   `provider_name`: Specifies the LLM provider.
-        *   Local options: `ollama`, `lm-studio`, `openai` (for local OpenAI-compatible servers). `server` is deprecated — see [Setup to run the LLM on your own server](#setup-to-run-the-llm-on-your-own-server).
+        *   Local options: `ollama`, `lm-studio`, `openai` (for local OpenAI-compatible servers). `server` is deprecated â€” see [Setup to run the LLM on your own server](#setup-to-run-the-llm-on-your-own-server).
         *   API options: `openai`, `google`, `deepseek`, `huggingface`, `togetherAI`.
     *   `provider_model`: The specific model name or ID for the chosen provider (e.g., `deepseekcoder:6.7b` for Ollama, `gpt-3.5-turbo` for OpenAI API, `mistralai/Mixtral-8x7B-Instruct-v0.1` for TogetherAI).
     *   `provider_server_address`: The address of your LLM provider.
@@ -490,7 +492,7 @@ stealth_mode = False
     *   `save_session`: `True` to save the current session's state for potential recovery, `False` otherwise.
     *   `speak`: `True` to enable text-to-speech voice output, `False` to disable.
     *   `listen`: `True` to enable speech-to-text voice input (CLI mode only), `False` to disable.
-    *   `work_dir`: **Crucial:** The directory where AgenticSeek will read/write files. **Ensure this path is valid and accessible on your system.**
+    *   `work_dir`: **Crucial:** The directory where localagent-pro will read/write files. **Ensure this path is valid and accessible on your system.**
     *   `jarvis_personality`: `True` to use a more "Jarvis-like" system prompt (experimental), `False` for the standard prompt.
     *   `languages`: A comma-separated list of languages (e.g., `en, zh, fr`). Used for TTS voice selection (defaults to the first) and can assist the LLM router. Avoid too many or very similar languages for router efficiency.
 *   **`[BROWSER]` Section:**
@@ -507,7 +509,7 @@ This section summarizes the supported LLM provider types. Configure them in `con
 | `ollama`                      | `True`     | Use Ollama to serve local LLMs.                                             | [Setup for running LLM locally](#setup-for-running-llm-locally-on-your-machine) |
 | `lm-studio`                   | `True`     | Use LM-Studio to serve local LLMs.                                          | [Setup for running LLM locally](#setup-for-running-llm-locally-on-your-machine) |
 | `openai` (for local server)   | `True`     | Connect to a local server that exposes an OpenAI-compatible API (e.g., llama.cpp). | [Setup for running LLM locally](#setup-for-running-llm-locally-on-your-machine) |
-| `server` (deprecated)         | `False`    | Legacy AgenticSeek self-hosted LLM server. Use remote Ollama or an OpenAI-compatible server instead. | [Setup to run the LLM on your own server](#setup-to-run-the-llm-on-your-own-server) |
+| `server` (deprecated)         | `False`    | Legacy localagent-pro self-hosted LLM server. Use remote Ollama or an OpenAI-compatible server instead. | [Setup to run the LLM on your own server](#setup-to-run-the-llm-on-your-own-server) |
 
 **API Providers (Cloud-Based):**
 
@@ -538,7 +540,7 @@ ChromeDriver version incompatibility occurs when:
 ### Solution Steps
 
 #### 1. Check Your Chrome Version
-Open Google Chrome → `Settings > About Chrome` to find your version (e.g., "Version 134.0.6998.88")
+Open Google Chrome â†’ `Settings > About Chrome` to find your version (e.g., "Version 134.0.6998.88")
 
 #### 2. Download Matching ChromeDriver
 
@@ -579,7 +581,7 @@ chromedriver --version
 
 ### Docker-Specific Notes
 
-⚠️ **Important for Docker Users:**
+âš ï¸ **Important for Docker Users:**
 - The Docker volume mount approach may not work with stealth mode (`undetected_chromedriver`)
 - **Solution**: Place ChromeDriver in the project root directory as `./chromedriver`
 - The application will automatically detect and use this binary
@@ -606,9 +608,9 @@ chromedriver --version
 
 | Chrome Version | ChromeDriver Version | Status |
 |----------------|---------------------|---------|
-| 134.0.6998.x   | 134.0.6998.165     | ✅ Works |
-| 133.0.6943.x   | 133.0.6943.141     | ✅ Works |
-| 132.0.6834.x   | 132.0.6834.159     | ✅ Works |
+| 134.0.6998.x   | 134.0.6998.165     | âœ… Works |
+| 133.0.6943.x   | 133.0.6943.141     | âœ… Works |
+| 132.0.6834.x   | 132.0.6834.159     | âœ… Works |
 
 *For the latest compatibility, check the [Chrome for Testing dashboard](https://googlechromelabs.github.io/chrome-for-testing/)*
 
@@ -640,8 +642,8 @@ Ollama connection failed at http://host.docker.internal:11434. Check if the serv
 
 The frontend shows `Error: Unable to get a response.` and the backend returns HTTP 500 on `/query`.
 
-*   **Cause:** When AgenticSeek runs in Docker, the backend reaches your host's Ollama via `host.docker.internal`. Only the **port** of `provider_server_address` is used in Docker mode; the host part is replaced by `DOCKER_INTERNAL_URL` from `.env`. So the failure is not a config typo — it's that Ollama on the host is only bound to `127.0.0.1:11434` and refuses connections coming in over the Docker bridge.
-*   **Do NOT** change `provider_server_address = 127.0.0.1:11434` in `config.ini` — the host portion is ignored inside the container.
+*   **Cause:** When localagent-pro runs in Docker, the backend reaches your host's Ollama via `host.docker.internal`. Only the **port** of `provider_server_address` is used in Docker mode; the host part is replaced by `DOCKER_INTERNAL_URL` from `.env`. So the failure is not a config typo â€” it's that Ollama on the host is only bound to `127.0.0.1:11434` and refuses connections coming in over the Docker bridge.
+*   **Do NOT** change `provider_server_address = 127.0.0.1:11434` in `config.ini` â€” the host portion is ignored inside the container.
 *   **Solution:** Bind Ollama to all interfaces by setting `OLLAMA_HOST=0.0.0.0:11434` on the host:
 
     Manual `ollama serve`:
@@ -712,16 +714,16 @@ This might arise if you are running the CLI mode with the wrong base url for sea
 
 `SEARXNG_BASE_URL` is set in `.env` and depends only on **where the backend runs**:
 
-**Backend on host (CLI mode)**: `SEARXNG_BASE_URL="http://localhost:8080"` — if you changed `SEARXNG_PORT`, use that port instead (e.g. `http://localhost:8001`). `http://searxng:...` does **not** work here: that hostname only resolves inside Docker.
+**Backend on host (CLI mode)**: `SEARXNG_BASE_URL="http://localhost:8080"` â€” if you changed `SEARXNG_PORT`, use that port instead (e.g. `http://localhost:8001`). `http://searxng:...` does **not** work here: that hostname only resolves inside Docker.
 
-**Backend in Docker (web interface, `full` profile)**: `SEARXNG_BASE_URL="http://searxng:8080"` — always port `8080`, even if you changed `SEARXNG_PORT`; that variable only remaps the host side.
+**Backend in Docker (web interface, `full` profile)**: `SEARXNG_BASE_URL="http://searxng:8080"` â€” always port `8080`, even if you changed `SEARXNG_PORT`; that variable only remaps the host side.
 
 > **Note on port conflicts**: If port `8080` is already in use on your host, set `SEARXNG_PORT` (e.g. `8001`) in `.env`, then:
-> - Web interface (backend in Docker): keep `SEARXNG_BASE_URL="http://searxng:8080"` — the internal Docker port does not change.
-> - CLI mode (backend on host): set `SEARXNG_BASE_URL="http://localhost:8001"` — it must match `SEARXNG_PORT`.
-> - Browser checks: open `http://localhost:<SEARXNG_PORT>` — whatever answers on the old port `8080` is some other application, not AgenticSeek's SearXNG.
+> - Web interface (backend in Docker): keep `SEARXNG_BASE_URL="http://searxng:8080"` â€” the internal Docker port does not change.
+> - CLI mode (backend on host): set `SEARXNG_BASE_URL="http://localhost:8001"` â€” it must match `SEARXNG_PORT`.
+> - Browser checks: open `http://localhost:<SEARXNG_PORT>` â€” whatever answers on the old port `8080` is some other application, not localagent-pro's SearXNG.
 >
-> After changing `.env`, restart the backend (`api.py` or `cli.py`) — the file is only read at process start.
+> After changing `.env`, restart the backend (`api.py` or `cli.py`) â€” the file is only read at process start.
 
 ## FAQ
 
@@ -729,10 +731,10 @@ This might arise if you are running the CLI mode with the wrong base url for sea
 
 | Model Size  | GPU  | Comment                                               |
 |-----------|--------|-----------------------------------------------------------|
-| 7B        | 8GB Vram | ⚠️ Not recommended. Performance is poor, frequent hallucinations, and planner agents will likely fail. |
-| 14B        | 12 GB VRAM (e.g. RTX 3060) | ✅ Usable for simple tasks. May struggle with web browsing and planning tasks. |
-| 32B        | 24+ GB VRAM (e.g. RTX 4090) | 🚀 Success with most tasks, might still struggle with task planning |
-| 70B+        | 48+ GB Vram | 💪 Excellent. Recommended for advanced use cases. |
+| 7B        | 8GB Vram | âš ï¸ Not recommended. Performance is poor, frequent hallucinations, and planner agents will likely fail. |
+| 14B        | 12 GB VRAM (e.g. RTX 3060) | âœ… Usable for simple tasks. May struggle with web browsing and planning tasks. |
+| 32B        | 24+ GB VRAM (e.g. RTX 4090) | ðŸš€ Success with most tasks, might still struggle with task planning |
+| 70B+        | 48+ GB Vram | ðŸ’ª Excellent. Recommended for advanced use cases. |
 
 **Q: I get an error what do I do?**
 
@@ -742,19 +744,19 @@ Ensure local is running (`ollama serve`), your `config.ini` matches your provide
 
 Yes with Ollama, lm-studio or server providers, all speech to text, LLM and text to speech model run locally. Non-local options (OpenAI or others API) are optional.
 
-**Q: Why should I use AgenticSeek when I have Manus?**
+**Q: Why should I use localagent-pro when I have Manus?**
 
-Unlike Manus, AgenticSeek prioritizes independence from external systems, giving you more control, privacy and avoid api cost.
+Unlike Manus, localagent-pro prioritizes independence from external systems, giving you more control, privacy and avoid api cost.
 
 **Q: Who is behind the project ?**
 
-The project was created by me, along with two friends who serve as maintainers and contributors from the open-source community on GitHub. We’re just a group of passionate individuals, not a startup or affiliated with any organization.
+The project was created by me, along with two friends who serve as maintainers and contributors from the open-source community on GitHub. Weâ€™re just a group of passionate individuals, not a startup or affiliated with any organization.
 
-Any AgenticSeek account on X other than my personal account (https://x.com/Martin993886460) is an impersonation.
+Any localagent-pro account on X other than my personal account (https://x.com/Martin993886460) is an impersonation.
 
 ## Contribute
 
-We’re looking for developers to improve AgenticSeek! Check out open issues or discussion.
+Weâ€™re looking for developers to improve localagent-pro! Check out open issues or discussion.
 
 [Contribution guide](./docs/CONTRIBUTING.md)
 
@@ -777,7 +779,7 @@ We’re looking for developers to improve AgenticSeek! Check out open issues or 
 
 <a href="https://mangoproxy.com/?utm_source=fosowl_github&utm_medium=partner&utm_campaign=fosowl_partners"><img src="./media/banners/bannerMangoProxy.png" height="350" alt="MangoProxy Banner" ></a>
 
-Mango Proxy provides residential, ISP, mobile, and datacenter proxies that can be used with agenticSeek when websites require IP rotation or additional network flexibility. This can help reduce anti-bot challenges, improve reliability across different targets, and support large-scale web automation workflows.
+Mango Proxy provides residential, ISP, mobile, and datacenter proxies that can be used with localagent-pro when websites require IP rotation or additional network flexibility. This can help reduce anti-bot challenges, improve reliability across different targets, and support large-scale web automation workflows.
 
 Use promo code **FOSOWL** to get *8% off* Static ISP Proxies.
 
@@ -785,7 +787,7 @@ Use promo code **FOSOWL** to get *8% off* Static ISP Proxies.
 
 <a href="https://serpapi.com/"><img src="./media/banners/sponsor_banner_serpapi.png" height="350" alt="SerpApi Banner" ></a>
 
-Want to level up AgenticSeek capabilities with features like flight search, trip planning, or snagging the best shopping deals? Consider crafting a custom tool with SerpApi to unlock more Jarvis-like capabilities. With SerpApi, you can turbocharge your agent for specialized tasks while staying in full control.
+Want to level up localagent-pro capabilities with features like flight search, trip planning, or snagging the best shopping deals? Consider crafting a custom tool with SerpApi to unlock more Jarvis-like capabilities. With SerpApi, you can turbocharge your agent for specialized tasks while staying in full control.
 
 See [Contributing.md](./docs/CONTRIBUTING.md) to learn how to integrate custom tools!
 
